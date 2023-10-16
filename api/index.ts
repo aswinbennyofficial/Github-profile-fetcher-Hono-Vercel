@@ -29,7 +29,7 @@ app.get('/github/:id', async (c) =>{
       repoarray.push(repoJson[i].name);
   }
 
- 
+ // merging array and json
   const final = { ...profileJson, repolist: repoarray };
 
   return c.json(final);
